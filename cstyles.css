@@ -1,0 +1,51 @@
+body{
+    background-color: #87cdeb;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.iconos{
+    font-size: 150px;
+    color: #fff;
+}
+
+.container{
+    margin-top: 30px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 4%;
+    padding: 20px;
+    background-color: #449dd1;
+}
+
+#icon1{
+    text-align: center;
+}
+
+#icon2{
+    text-align: center;
+}
+
+#icon{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+.btn{
+    background-color: #7ae582;
+    color:black
+}
+
+.boton{
+    margin-top: 30px;
+    text-align: center;
+}
