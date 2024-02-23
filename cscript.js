@@ -19,6 +19,7 @@ $("#boton").on("click", function(){
     dibujar_puntaje()
     $("#mano").attr("class", "fa-regular fa-hand iconos")
     $("#mano_cpu").attr("class", "fa-regular fa-hand iconos")
+    $("#ganador").html("Ganador")
 })
 
 let pto_usuario =0
@@ -30,15 +31,15 @@ function jugar (jugada_usuario){
         if(jugada_usuario == 1 ){
 
             if(jugada_cpu== 1){
-                alert("Empatamos con piedra")
+                $("#ganador").html("Empatamos con piedra")
                 $("#mano_cpu").attr("class", "fa-regular fa-hand-back-fist iconos")
             }
             else if (jugada_cpu == 2){
-                alert("Te gané con papel")
+                $("#ganador").html("Te gané con papel")
                 pto_cpu +=1
             }
             else{
-                alert("Ganaste! (Escogí tijeras)")
+                $("#ganador").html("Ganaste! (Escogí tijeras)")
                 pto_usuario += 1
                 $("#mano_cpu").attr("class", "fa-regular fa-hand-scissors iconos")
             }
@@ -47,15 +48,15 @@ function jugar (jugada_usuario){
         if(jugada_usuario == 2 ){
 
             if(jugada_cpu== 1){
-                alert("Ganaste! (Escogí piedra)")
+                $("#ganador").html("Ganaste! (Escogí piedra)")
                 pto_usuario +=1
                 $("#mano_cpu").attr("class", "fa-regular fa-hand-back-fist iconos")
             }       
             else if (jugada_cpu == 2){
-                alert("Empatamos con papel")
+                $("#ganador").html("Empatamos con papel")
             }
             else{
-                alert("Te gané con tijeras)")
+                $("#ganador").html("Te gané con tijeras")
                 pto_cpu +=1
                 $("#mano_cpu").attr("class", "fa-regular fa-hand-scissors iconos")
             }
@@ -64,16 +65,16 @@ function jugar (jugada_usuario){
         if(jugada_usuario == 3 ){   
 
             if(jugada_cpu== 1){
-                alert("Te gané con piedra")
+                $("#ganador").html("Te gané con piedra")
                 pto_cpu +=1
                 $("#mano_cpu").attr("class", "fa-regular fa-hand-back-fist iconos")
             }
             else if (jugada_cpu == 2){
-                alert("Ganaste! (Escogí papel)")
+                $("#ganador").html("Ganaste! (Escogí papel)")
                 pto_usuario +=1
             }
             else{
-                alert("Empatamos con tijeras")
+                $("#ganador").html("Empatamos con tijeras")
                 $("#mano_cpu").attr("class", "fa-regular fa-hand-scissors iconos")
             }
             
